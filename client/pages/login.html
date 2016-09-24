@@ -1,0 +1,38 @@
+<div class="col-sm-4 col-sm-offset-4" style="margin-top:100px;">   
+
+<div class="panel panel-primary">
+
+  <div class="panel-heading"><h4 class="title"><i class="fa fa-sign-in"></i> Log In</h4></div>
+  <div class="panel-body">
+  
+	<div class="row" ng-controller="loginController">
+	<div class="col-sm-12" >	
+	<form class="form" ng-submit="login()">
+	<h2 class="form-signin-heading">Login to your account</h2>
+	<div ng-show="error" class="alert alert-danger">{{errorMessage}}</div>
+	<div class="form-group">
+	<label>Username</label>
+	<input type="text" class="form-control" name="username" ng-model="loginForm.username" required>
+	</div>
+	<div class="form-group">
+	<label>Password</label>
+	<input type="password" class="form-control" name="password" ng-model="loginForm.password" required>
+	</div>
+	<div class="form-group">
+	<label ><input type="checkbox" value="remember-me"> Remember me</label>
+	<a href="" class="pull-right">Forgot Password?</a>
+	</div>
+	<div class="form-group">
+	<button type="submit" class="btn btn-lg btn-primary btn-block" ng-disabled="disabled">Login</button>
+	</div>
+	
+	<div class="form-group">
+	<a href="register" class="btn btn-md btn-info pull-right">Sign Up</a>
+	</div>
+	</form>
+	</div>
+	
+	</div>
+  </div>
+</div>
+</div>

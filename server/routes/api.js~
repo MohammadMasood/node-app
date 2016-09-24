@@ -1,0 +1,23 @@
+var express = require('express');
+var router = express.Router();
+
+
+router.post('/listUser', function(req, res) {
+	// List user page
+});
+
+router.post('/addUser', function(req, res) {
+	// List user page
+});
+
+
+router.get('/status', function(req, res) {
+							   
+	return res.status(200).json({
+	  status: false
+	});  
+  
+});
+
+
+module.exports = router;
